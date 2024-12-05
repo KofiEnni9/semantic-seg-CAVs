@@ -1,0 +1,294 @@
+2024-12-04 01:54:29,953 - INFO - Starting the script.
+2024-12-04 01:54:35,042 - INFO - Building dataloaders...
+2024-12-04 01:54:35,042 - INFO - Dataloaders built successfully.
+2024-12-04 01:54:35,042 - INFO - Starting model...
+2024-12-04 01:56:48,641 - INFO - Epoch 1 - Average Training Loss: 1.5143
+2024-12-04 01:57:05,058 - INFO - Epoch 1 - Validation Loss: 1.2240, Accuracy: 45.63%, mIoU: 0.1908
+2024-12-04 01:57:05,058 - INFO - Epoch 1 - IoU per class: 0.0484, 0.7315, 0.3075, 0.0422, 0.0147, 0.0006
+2024-12-04 01:57:05,155 - INFO - Epoch 1 - Saved new best model.
+2024-12-04 01:59:35,427 - INFO - Epoch 2 - Average Training Loss: 0.7668
+2024-12-04 01:59:57,947 - INFO - Epoch 2 - Validation Loss: 0.9207, Accuracy: 68.30%, mIoU: 0.2866
+2024-12-04 01:59:57,947 - INFO - Epoch 2 - IoU per class: 0.2427, 0.6854, 0.6244, 0.0200, 0.0255, 0.1218
+2024-12-04 01:59:58,094 - INFO - Epoch 2 - Saved new best model.
+2024-12-04 02:02:44,825 - INFO - Epoch 3 - Average Training Loss: 0.5930
+2024-12-04 02:03:06,509 - INFO - Epoch 3 - Validation Loss: 1.0102, Accuracy: 66.66%, mIoU: 0.2681
+2024-12-04 02:03:06,510 - INFO - Epoch 3 - IoU per class: 0.2308, 0.6118, 0.5612, 0.0117, 0.0138, 0.1791
+2024-12-04 02:05:01,544 - INFO - Starting the script.
+2024-12-04 02:05:02,695 - INFO - Building dataloaders...
+2024-12-04 02:05:02,695 - INFO - Dataloaders built successfully.
+2024-12-04 02:05:02,695 - INFO - Starting model...
+2024-12-04 02:07:15,893 - INFO - Epoch 1 - Average Training Loss: 1.1356
+2024-12-04 02:07:32,215 - INFO - Epoch 1 - Validation Loss: 1.3348, Accuracy: 41.61%, mIoU: 0.1269
+2024-12-04 02:07:32,215 - INFO - Epoch 1 - IoU per class: 0.1877, 0.0981, 0.4744, 0.0002, 0.0000, 0.0011
+2024-12-04 02:07:32,294 - INFO - Epoch 1 - Saved new best model.
+2024-12-04 02:09:47,744 - INFO - Epoch 2 - Average Training Loss: 0.6520
+2024-12-04 02:10:03,946 - INFO - Epoch 2 - Validation Loss: 1.1657, Accuracy: 47.77%, mIoU: 0.1579
+2024-12-04 02:10:03,947 - INFO - Epoch 2 - IoU per class: 0.1883, 0.2336, 0.4973, 0.0001, 0.0000, 0.0282
+2024-12-04 02:10:04,022 - INFO - Epoch 2 - Saved new best model.
+2024-12-04 02:12:35,671 - INFO - Epoch 3 - Average Training Loss: 0.4910
+2024-12-04 02:12:52,892 - INFO - Epoch 3 - Validation Loss: 1.0335, Accuracy: 53.59%, mIoU: 0.1997
+2024-12-04 02:12:52,892 - INFO - Epoch 3 - IoU per class: 0.1823, 0.4010, 0.5063, 0.0000, 0.0000, 0.1087
+2024-12-04 02:12:52,987 - INFO - Epoch 3 - Saved new best model.
+2024-12-04 02:15:03,850 - INFO - Epoch 4 - Average Training Loss: 0.4854
+2024-12-04 02:15:19,887 - INFO - Epoch 4 - Validation Loss: 1.0817, Accuracy: 52.75%, mIoU: 0.1892
+2024-12-04 02:15:19,887 - INFO - Epoch 4 - IoU per class: 0.2025, 0.4200, 0.3713, 0.0001, 0.0000, 0.1415
+2024-12-04 02:17:30,202 - INFO - Epoch 5 - Average Training Loss: 0.4253
+2024-12-04 02:17:46,963 - INFO - Epoch 5 - Validation Loss: 0.9941, Accuracy: 57.29%, mIoU: 0.2069
+2024-12-04 02:17:46,963 - INFO - Epoch 5 - IoU per class: 0.1780, 0.4175, 0.4985, 0.0003, 0.0001, 0.1470
+2024-12-04 02:17:47,066 - INFO - Epoch 5 - Saved new best model.
+2024-12-04 02:19:57,316 - INFO - Epoch 6 - Average Training Loss: 0.4041
+2024-12-04 02:20:13,804 - INFO - Epoch 6 - Validation Loss: 0.9313, Accuracy: 67.45%, mIoU: 0.2572
+2024-12-04 02:20:13,804 - INFO - Epoch 6 - IoU per class: 0.2484, 0.6246, 0.5383, 0.0023, 0.0038, 0.1258
+2024-12-04 02:20:13,901 - INFO - Epoch 6 - Saved new best model.
+2024-12-04 02:22:40,103 - INFO - Epoch 7 - Average Training Loss: 0.3568
+2024-12-04 02:22:56,832 - INFO - Epoch 7 - Validation Loss: 0.8210, Accuracy: 69.39%, mIoU: 0.2876
+2024-12-04 02:22:56,832 - INFO - Epoch 7 - IoU per class: 0.3666, 0.6843, 0.5373, 0.0086, 0.0006, 0.1280
+2024-12-04 02:22:56,926 - INFO - Epoch 7 - Saved new best model.
+2024-12-04 02:25:28,463 - INFO - Epoch 8 - Average Training Loss: 0.3359
+2024-12-04 02:25:45,075 - INFO - Epoch 8 - Validation Loss: 0.7795, Accuracy: 71.18%, mIoU: 0.3040
+2024-12-04 02:25:45,075 - INFO - Epoch 8 - IoU per class: 0.3328, 0.6857, 0.6467, 0.0118, 0.0000, 0.1470
+2024-12-04 02:25:45,167 - INFO - Epoch 8 - Saved new best model.
+2024-12-04 02:28:15,704 - INFO - Epoch 9 - Average Training Loss: 0.3162
+2024-12-04 02:28:33,619 - INFO - Epoch 9 - Validation Loss: 0.7848, Accuracy: 73.37%, mIoU: 0.2994
+2024-12-04 02:28:33,620 - INFO - Epoch 9 - IoU per class: 0.3745, 0.7278, 0.6104, 0.0167, 0.0117, 0.0552
+2024-12-04 02:30:44,921 - INFO - Epoch 10 - Average Training Loss: 0.3313
+2024-12-04 02:31:01,206 - INFO - Epoch 10 - Validation Loss: 0.5661, Accuracy: 79.62%, mIoU: 0.3616
+2024-12-04 02:31:01,206 - INFO - Epoch 10 - IoU per class: 0.4476, 0.8132, 0.7289, 0.0121, 0.0019, 0.1661
+2024-12-04 02:31:01,294 - INFO - Epoch 10 - Saved new best model.
+2024-12-04 02:33:25,684 - INFO - Epoch 11 - Average Training Loss: 0.2669
+2024-12-04 02:33:45,691 - INFO - Epoch 11 - Validation Loss: 0.7009, Accuracy: 73.89%, mIoU: 0.3007
+2024-12-04 02:33:45,691 - INFO - Epoch 11 - IoU per class: 0.3259, 0.6882, 0.7237, 0.0050, 0.0184, 0.0427
+2024-12-04 02:36:27,817 - INFO - Epoch 12 - Average Training Loss: 0.2622
+2024-12-04 02:36:49,006 - INFO - Epoch 12 - Validation Loss: 0.6497, Accuracy: 75.63%, mIoU: 0.3237
+2024-12-04 02:36:49,007 - INFO - Epoch 12 - IoU per class: 0.3927, 0.7308, 0.7335, 0.0167, 0.0306, 0.0380
+2024-12-04 02:37:33,966 - INFO - Starting the script.
+2024-12-04 02:37:36,207 - INFO - Building dataloaders...
+2024-12-04 02:37:36,208 - INFO - Dataloaders built successfully.
+2024-12-04 02:37:36,208 - INFO - Starting model...
+2024-12-04 02:40:24,126 - INFO - Epoch 1 - Average Training Loss: 1.1113
+2024-12-04 02:40:45,789 - INFO - Epoch 1 - Validation Loss: 1.1273, Accuracy: 60.53%, mIoU: 0.2242
+2024-12-04 02:40:45,789 - INFO - Epoch 1 - IoU per class: 0.1009, 0.6701, 0.5286, 0.0258, 0.0041, 0.0159
+
+2024-12-04 02:40:45,899 - INFO - Epoch 1 - Saved new best model.
+
+2024-12-04 02:44:41,840 - INFO - Epoch 2 - Average Training Loss: 0.6810
+2024-12-04 02:45:02,763 - INFO - Epoch 2 - Validation Loss: 0.9850, Accuracy: 64.64%, mIoU: 0.2427
+2024-12-04 02:45:02,763 - INFO - Epoch 2 - IoU per class: 0.1497, 0.7131, 0.5127, 0.0043, 0.0089, 0.0676
+
+2024-12-04 02:45:02,873 - INFO - Epoch 2 - Saved new best model.
+
+2024-12-04 02:47:56,048 - INFO - Epoch 3 - Average Training Loss: 0.5083
+2024-12-04 02:48:16,453 - INFO - Epoch 3 - Validation Loss: 1.1563, Accuracy: 53.68%, mIoU: 0.1996
+2024-12-04 02:48:16,453 - INFO - Epoch 3 - IoU per class: 0.0649, 0.4931, 0.4441, 0.0000, 0.0073, 0.1881
+
+2024-12-04 02:51:06,195 - INFO - Epoch 4 - Average Training Loss: 0.3937
+2024-12-04 02:51:29,118 - INFO - Epoch 4 - Validation Loss: 0.8426, Accuracy: 69.98%, mIoU: 0.2593
+2024-12-04 02:51:29,118 - INFO - Epoch 4 - IoU per class: 0.1283, 0.8219, 0.5936, 0.0000, 0.0045, 0.0073
+
+2024-12-04 02:51:29,244 - INFO - Epoch 4 - Saved new best model.
+
+2024-12-04 02:54:18,049 - INFO - Epoch 5 - Average Training Loss: 0.3771
+2024-12-04 02:54:42,217 - INFO - Epoch 5 - Validation Loss: 0.8698, Accuracy: 69.12%, mIoU: 0.2789
+2024-12-04 02:54:42,217 - INFO - Epoch 5 - IoU per class: 0.0897, 0.7658, 0.5463, 0.0005, 0.0000, 0.2714
+
+2024-12-04 02:58:01,312 - INFO - Epoch 6 - Average Training Loss: 0.3159
+2024-12-04 02:58:52,542 - INFO - Epoch 6 - Validation Loss: 0.8373, Accuracy: 69.27%, mIoU: 0.2718
+2024-12-04 02:58:52,542 - INFO - Epoch 6 - IoU per class: 0.1002, 0.7964, 0.5383, 0.0007, 0.0000, 0.1950
+
+2024-12-04 02:58:52,834 - INFO - Epoch 6 - Saved new best model.
+
+2024-12-04 03:02:04,452 - INFO - Epoch 7 - Average Training Loss: 0.3076
+2024-12-04 03:02:24,645 - INFO - Epoch 7 - Validation Loss: 0.8241, Accuracy: 71.05%, mIoU: 0.3056
+2024-12-04 03:02:24,645 - INFO - Epoch 7 - IoU per class: 0.1418, 0.7904, 0.5983, 0.0039, 0.0000, 0.2990
+
+2024-12-04 03:02:24,758 - INFO - Epoch 7 - Saved new best model.
+
+2024-12-04 03:05:30,332 - INFO - Epoch 8 - Average Training Loss: 0.2736
+2024-12-04 03:06:19,778 - INFO - Epoch 8 - Validation Loss: 0.7530, Accuracy: 73.25%, mIoU: 0.3032
+2024-12-04 03:06:19,778 - INFO - Epoch 8 - IoU per class: 0.2029, 0.7645, 0.6528, 0.0230, 0.0000, 0.1763
+
+2024-12-04 03:06:20,076 - INFO - Epoch 8 - Saved new best model.
+
+2024-12-04 03:10:58,618 - INFO - Epoch 9 - Average Training Loss: 0.2732
+2024-12-04 03:11:19,664 - INFO - Epoch 9 - Validation Loss: 0.7033, Accuracy: 74.68%, mIoU: 0.3488
+2024-12-04 03:11:19,664 - INFO - Epoch 9 - IoU per class: 0.2938, 0.8130, 0.6282, 0.0453, 0.0002, 0.3125
+
+2024-12-04 03:11:19,814 - INFO - Epoch 9 - Saved new best model.
+
+2024-12-04 03:14:05,545 - INFO - Epoch 10 - Average Training Loss: 0.2693
+2024-12-04 03:14:25,459 - INFO - Epoch 10 - Validation Loss: 0.6839, Accuracy: 73.91%, mIoU: 0.2952
+2024-12-04 03:14:25,459 - INFO - Epoch 10 - IoU per class: 0.3363, 0.8198, 0.5200, 0.0237, 0.0001, 0.0712
+
+2024-12-04 03:14:25,581 - INFO - Epoch 10 - Saved new best model.
+
+2024-12-04 03:17:10,119 - INFO - Epoch 11 - Average Training Loss: 0.2404
+2024-12-04 03:17:30,610 - INFO - Epoch 11 - Validation Loss: 0.7146, Accuracy: 73.95%, mIoU: 0.3223
+2024-12-04 03:17:30,610 - INFO - Epoch 11 - IoU per class: 0.2683, 0.8135, 0.6412, 0.0172, 0.0066, 0.1870
+
+2024-12-04 03:21:08,790 - INFO - Epoch 12 - Average Training Loss: 0.2217
+2024-12-04 03:21:58,205 - INFO - Epoch 12 - Validation Loss: 0.7736, Accuracy: 74.32%, mIoU: 0.3268
+2024-12-04 03:21:58,205 - INFO - Epoch 12 - IoU per class: 0.2186, 0.7779, 0.6471, 0.0313, 0.0024, 0.2834
+
+2024-12-04 03:26:08,750 - INFO - Epoch 13 - Average Training Loss: 0.2368
+2024-12-04 03:26:58,068 - INFO - Epoch 13 - Validation Loss: 0.6940, Accuracy: 75.20%, mIoU: 0.3348
+2024-12-04 03:26:58,068 - INFO - Epoch 13 - IoU per class: 0.2657, 0.8052, 0.6604, 0.0603, 0.0009, 0.2162
+
+2024-12-04 03:30:07,469 - INFO - Epoch 14 - Average Training Loss: 0.2291
+2024-12-04 03:30:27,539 - INFO - Epoch 14 - Validation Loss: 0.7026, Accuracy: 75.35%, mIoU: 0.3379
+2024-12-04 03:30:27,539 - INFO - Epoch 14 - IoU per class: 0.2390, 0.8076, 0.6348, 0.0853, 0.0045, 0.2563
+
+2024-12-04 03:35:17,051 - INFO - Epoch 15 - Average Training Loss: 0.2102
+2024-12-04 03:36:06,395 - INFO - Epoch 15 - Validation Loss: 0.6627, Accuracy: 77.33%, mIoU: 0.3175
+2024-12-04 03:36:06,396 - INFO - Epoch 15 - IoU per class: 0.2973, 0.8110, 0.6642, 0.1209, 0.0005, 0.0111
+
+2024-12-04 03:36:06,691 - INFO - Epoch 15 - Saved new best model.
+
+2024-12-04 04:12:06,652 - INFO - Starting the script.
+2024-12-04 04:12:08,514 - INFO - Building dataloaders...
+2024-12-04 04:12:08,514 - INFO - Dataloaders built successfully.
+2024-12-04 04:12:08,514 - INFO - Starting model...
+2024-12-04 04:14:33,671 - INFO - Epoch 1 - Average Training Loss: 1.2194
+2024-12-04 04:14:56,781 - INFO - Epoch 1 lr: 0.000010 - Validation Loss: 1.4264, Accuracy: 39.45%, mIoU: 0.1180
+2024-12-04 04:14:56,781 - INFO - Epoch 1 - IoU per class: 0.0511, 0.2486, 0.4033, 0.0047, 0.0000, 0.0005
+
+2024-12-04 04:14:56,932 - INFO - Epoch 1 - Saved new best model.
+
+2024-12-04 04:17:29,529 - INFO - Epoch 2 - Average Training Loss: 0.7967
+2024-12-04 04:17:46,383 - INFO - Epoch 2 lr: 0.000010 - Validation Loss: 1.3775, Accuracy: 42.31%, mIoU: 0.1027
+2024-12-04 04:17:46,383 - INFO - Epoch 2 - IoU per class: 0.0301, 0.2608, 0.3232, 0.0017, 0.0000, 0.0001
+
+2024-12-04 04:17:46,481 - INFO - Epoch 2 - Saved new best model.
+
+2024-12-04 04:18:51,865 - INFO - Starting the script.
+2024-12-04 04:18:55,039 - INFO - Building dataloaders...
+2024-12-04 04:18:55,040 - INFO - Dataloaders built successfully.
+2024-12-04 04:18:55,040 - INFO - Starting model...
+2024-12-04 04:20:59,635 - INFO - Epoch 3 - Average Training Loss: 0.6975
+2024-12-04 04:21:24,272 - INFO - Epoch 3 lr: 0.000009 - Validation Loss: 1.2155, Accuracy: 48.39%, mIoU: 0.1363
+2024-12-04 04:21:24,273 - INFO - Epoch 3 - IoU per class: 0.0907, 0.3853, 0.3391, 0.0023, 0.0000, 0.0002
+
+2024-12-04 04:21:24,485 - INFO - Epoch 3 - Saved new best model.
+
+2024-12-04 04:24:00,484 - INFO - Epoch 1 - Average Training Loss: 0.7314
+2024-12-04 04:24:31,547 - INFO - Epoch 1 lr: 0.000100 - Validation Loss: 1.1972, Accuracy: 59.31%, mIoU: 0.1952
+2024-12-04 04:24:31,547 - INFO - Epoch 1 - IoU per class: 0.0919, 0.6663, 0.4049, 0.0081, 0.0000, 0.0000
+
+2024-12-04 04:24:31,813 - INFO - Epoch 1 - Saved new best model.
+
+2024-12-04 04:25:14,594 - INFO - Epoch 4 - Average Training Loss: 0.5809
+2024-12-04 04:25:38,132 - INFO - Epoch 4 lr: 0.000007 - Validation Loss: 1.0413, Accuracy: 54.35%, mIoU: 0.1839
+2024-12-04 04:25:38,132 - INFO - Epoch 4 - IoU per class: 0.1051, 0.4906, 0.4960, 0.0031, 0.0000, 0.0085
+
+2024-12-04 04:25:38,230 - INFO - Epoch 4 - Saved new best model.
+
+2024-12-04 04:29:05,933 - INFO - Epoch 5 - Average Training Loss: 0.4847
+2024-12-04 04:29:09,787 - INFO - Epoch 2 - Average Training Loss: 0.4001
+2024-12-04 04:29:28,677 - INFO - Epoch 5 lr: 0.000004 - Validation Loss: 0.9814, Accuracy: 57.00%, mIoU: 0.2031
+2024-12-04 04:29:28,677 - INFO - Epoch 5 - IoU per class: 0.1987, 0.5579, 0.3866, 0.0014, 0.0000, 0.0739
+
+2024-12-04 04:29:28,772 - INFO - Epoch 5 - Saved new best model.
+
+2024-12-04 04:29:49,344 - INFO - Epoch 2 lr: 0.000100 - Validation Loss: 0.7912, Accuracy: 68.77%, mIoU: 0.2664
+2024-12-04 04:29:49,344 - INFO - Epoch 2 - IoU per class: 0.2243, 0.7721, 0.5980, 0.0042, 0.0000, 0.0000
+
+2024-12-04 04:29:49,455 - INFO - Epoch 2 - Saved new best model.
+
+2024-12-04 04:33:27,683 - INFO - Epoch 6 - Average Training Loss: 0.4726
+2024-12-04 04:33:53,235 - INFO - Epoch 6 lr: 0.000002 - Validation Loss: 0.9224, Accuracy: 61.29%, mIoU: 0.2141
+2024-12-04 04:33:53,236 - INFO - Epoch 6 - IoU per class: 0.1866, 0.6177, 0.4219, 0.0023, 0.0000, 0.0563
+
+2024-12-04 04:33:53,385 - INFO - Epoch 6 - Saved new best model.
+
+2024-12-04 04:34:10,687 - INFO - Epoch 3 - Average Training Loss: 0.3302
+2024-12-04 04:34:10,824 - INFO - Starting the script.
+2024-12-04 04:34:12,815 - INFO - Building dataloaders...
+2024-12-04 04:34:12,816 - INFO - Dataloaders built successfully.
+2024-12-04 04:34:12,816 - INFO - Starting model...
+2024-12-04 04:34:54,273 - INFO - Epoch 3 lr: 0.000091 - Validation Loss: 0.8036, Accuracy: 71.02%, mIoU: 0.2766
+2024-12-04 04:34:54,273 - INFO - Epoch 3 - IoU per class: 0.2987, 0.7253, 0.6332, 0.0018, 0.0006, 0.0000
+
+2024-12-04 04:38:10,927 - INFO - Epoch 1 - Average Training Loss: 1.3511
+2024-12-04 04:38:30,587 - INFO - Epoch 1 - Validation Loss: 1.2843, Accuracy: 40.28%, mIoU: 0.1757
+2024-12-04 04:38:30,587 - INFO - Epoch 1 - IoU per class: 0.1683, 0.1566, 0.6087, 0.0250, 0.0028, 0.0931
+
+2024-12-04 04:38:30,691 - INFO - Epoch 1 - Saved new best model.
+
+2024-12-04 04:38:57,592 - INFO - Starting the script.
+2024-12-04 04:40:25,175 - INFO - Starting the script.
+2024-12-04 04:40:26,148 - INFO - Building dataloaders...
+2024-12-04 04:40:26,149 - INFO - Dataloaders built successfully.
+2024-12-04 04:40:26,149 - INFO - Starting model...
+2024-12-04 05:19:21,484 - INFO - Epoch 1 - Average Training Loss: 0.5555
+2024-12-04 05:23:08,053 - INFO - Epoch 1 - Validation Loss: 0.5529, Accuracy: 80.47%, mIoU: 0.4524
+2024-12-04 05:23:08,054 - INFO - Epoch 1 - IoU per class: 0.4793, 0.8346, 0.6752, 0.2105, 0.1701, 0.3446
+
+2024-12-04 05:23:08,306 - INFO - Epoch 1 - Saved new best model.
+
+2024-12-04 06:00:21,334 - INFO - Epoch 2 - Average Training Loss: 0.3201
+2024-12-04 06:04:10,830 - INFO - Epoch 2 - Validation Loss: 0.4022, Accuracy: 86.25%, mIoU: 0.6030
+2024-12-04 06:04:10,830 - INFO - Epoch 2 - IoU per class: 0.6303, 0.8390, 0.8306, 0.4471, 0.3417, 0.5290
+
+2024-12-04 06:04:10,942 - INFO - Epoch 2 - Saved new best model.
+
+2024-12-04 06:41:15,139 - INFO - Epoch 3 - Average Training Loss: 0.2668
+2024-12-04 06:45:15,160 - INFO - Epoch 3 - Validation Loss: 0.2619, Accuracy: 91.51%, mIoU: 0.6813
+2024-12-04 06:45:15,162 - INFO - Epoch 3 - IoU per class: 0.7435, 0.9138, 0.8873, 0.5306, 0.3871, 0.6252
+
+2024-12-04 06:45:15,392 - INFO - Epoch 3 - Saved new best model.
+
+2024-12-04 07:22:38,543 - INFO - Epoch 4 - Average Training Loss: 0.2449
+2024-12-04 07:26:39,742 - INFO - Epoch 4 - Validation Loss: 0.2489, Accuracy: 91.85%, mIoU: 0.6952
+2024-12-04 07:26:39,743 - INFO - Epoch 4 - IoU per class: 0.7466, 0.9173, 0.8744, 0.5316, 0.4026, 0.6989
+
+2024-12-04 07:26:39,855 - INFO - Epoch 4 - Saved new best model.
+
+2024-12-04 08:03:25,236 - INFO - Epoch 5 - Average Training Loss: 0.2229
+2024-12-04 08:07:25,943 - INFO - Epoch 5 - Validation Loss: 0.2284, Accuracy: 92.60%, mIoU: 0.7092
+2024-12-04 08:07:25,943 - INFO - Epoch 5 - IoU per class: 0.7747, 0.9288, 0.8842, 0.5255, 0.4288, 0.7130
+
+2024-12-04 08:07:26,054 - INFO - Epoch 5 - Saved new best model.
+
+2024-12-04 08:44:09,010 - INFO - Epoch 6 - Average Training Loss: 0.2115
+2024-12-04 08:48:14,292 - INFO - Epoch 6 - Validation Loss: 0.2405, Accuracy: 91.98%, mIoU: 0.7050
+2024-12-04 08:48:14,293 - INFO - Epoch 6 - IoU per class: 0.7599, 0.9249, 0.8515, 0.5333, 0.4207, 0.7395
+
+2024-12-04 09:24:55,695 - INFO - Epoch 7 - Average Training Loss: 0.2044
+2024-12-04 09:29:06,051 - INFO - Epoch 7 - Validation Loss: 0.2243, Accuracy: 92.70%, mIoU: 0.7131
+2024-12-04 09:29:06,051 - INFO - Epoch 7 - IoU per class: 0.7692, 0.9279, 0.8887, 0.5561, 0.4222, 0.7147
+
+2024-12-04 09:29:06,163 - INFO - Epoch 7 - Saved new best model.
+
+2024-12-04 10:06:00,884 - INFO - Epoch 8 - Average Training Loss: 0.1889
+2024-12-04 10:10:14,183 - INFO - Epoch 8 - Validation Loss: 0.2213, Accuracy: 92.66%, mIoU: 0.7191
+2024-12-04 10:10:14,184 - INFO - Epoch 8 - IoU per class: 0.7721, 0.9266, 0.8998, 0.5595, 0.4338, 0.7228
+
+2024-12-04 10:10:14,294 - INFO - Epoch 8 - Saved new best model.
+
+2024-12-04 10:47:46,234 - INFO - Epoch 9 - Average Training Loss: 0.1858
+2024-12-04 10:51:58,671 - INFO - Epoch 9 - Validation Loss: 0.2227, Accuracy: 92.85%, mIoU: 0.7210
+2024-12-04 10:51:58,671 - INFO - Epoch 9 - IoU per class: 0.7780, 0.9321, 0.8932, 0.5606, 0.4422, 0.7197
+
+2024-12-04 12:30:23,118 - INFO - Epoch 10 - Average Training Loss: 0.1722
+2024-12-04 12:40:13,441 - INFO - Epoch 10 - Validation Loss: 0.2160, Accuracy: 93.09%, mIoU: 0.7235
+2024-12-04 12:40:13,446 - INFO - Epoch 10 - IoU per class: 0.7805, 0.9302, 0.9034, 0.5566, 0.4776, 0.6928
+
+2024-12-04 12:40:13,873 - INFO - Epoch 10 - Saved new best model.
+
+2024-12-04 13:25:27,533 - INFO - Epoch 11 - Average Training Loss: 0.1639
+2024-12-04 13:30:13,610 - INFO - Epoch 11 - Validation Loss: 0.2050, Accuracy: 93.35%, mIoU: 0.7452
+2024-12-04 13:30:13,611 - INFO - Epoch 11 - IoU per class: 0.7905, 0.9348, 0.9077, 0.5887, 0.5036, 0.7458
+
+2024-12-04 13:30:13,841 - INFO - Epoch 11 - Saved new best model.
+
+2024-12-04 14:13:01,204 - INFO - Epoch 12 - Average Training Loss: 0.1606
+2024-12-04 14:17:48,614 - INFO - Epoch 12 - Validation Loss: 0.2068, Accuracy: 93.41%, mIoU: 0.7374
+2024-12-04 14:17:48,615 - INFO - Epoch 12 - IoU per class: 0.7978, 0.9345, 0.9051, 0.5918, 0.4384, 0.7565
+
+2024-12-04 14:58:13,566 - INFO - Epoch 13 - Average Training Loss: 0.1516
+2024-12-04 15:03:07,246 - INFO - Epoch 13 - Validation Loss: 0.2097, Accuracy: 93.42%, mIoU: 0.7304
+2024-12-04 15:03:07,247 - INFO - Epoch 13 - IoU per class: 0.7982, 0.9343, 0.9018, 0.5870, 0.4669, 0.6940
+
+2024-12-04 16:17:49,322 - INFO - Epoch 14 - Average Training Loss: 0.1510
+2024-12-04 16:22:34,038 - INFO - Epoch 14 - Validation Loss: 0.2143, Accuracy: 93.40%, mIoU: 0.7302
+2024-12-04 16:22:34,039 - INFO - Epoch 14 - IoU per class: 0.7948, 0.9367, 0.9042, 0.5802, 0.4352, 0.7302
+
