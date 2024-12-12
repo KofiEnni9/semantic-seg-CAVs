@@ -97,8 +97,11 @@ class prepSegmentationDataset(Dataset):
 
         self.target_colors = {
 
+            # what it does is search for the colors below and if a color doesnt match any of these ones below 
+            # it defaults to 0 which is ignored in training
+
             0: (0, 0, 0),        # ignored: every color without matches below to be pased to this
-            1: [(208, 254, 157), (172, 208, 69)],  # Light green   # light greenish
+            1: [(208, 254, 157), (172, 208, 69)],  # Light green   # light greenish  # the use of two colors is because the images in some folders have different colors for say grass 
             2: [(59, 93, 4), (3, 48, 0)],  # Dark green   # deep green
             3: (155, 155, 154),  # Gray
             4: (138, 87, 42),    # Brown
