@@ -1,3 +1,37 @@
+# import numpy as np
+# from PIL import Image
+# from sklearn.cluster import KMeans
+# import matplotlib.pyplot as plt
+
+# # Load the original mask image
+# mask = Image.open(r"C:\Users\kofie\Desktop\real_world_data\Dataset3_NorthFarm_Segmentation\annotations\1570151446.872610832.png").convert('RGB')
+# mask_np = np.array(mask)
+
+# # Reshape mask to a 2D array of pixels (each row is an RGB color)
+# pixels = mask_np.reshape(-1, 3)
+
+# # Perform K-means clustering with 6 clusters
+# n_classes = 8
+# kmeans = KMeans(n_clusters=n_classes, random_state=0).fit(pixels)
+
+# # Get the cluster centers (quantized colors)
+# quantized_colors = kmeans.cluster_centers_.astype(int)
+# print("Quantized Colors (Cluster Centers):", quantized_colors)
+
+# # Replace each pixel with its cluster's center color
+# quantized_pixels = quantized_colors[kmeans.labels_]
+# quantized_image_np = quantized_pixels.reshape(mask_np.shape)
+
+# # Convert back to an image for visualization
+# quantized_image = Image.fromarray(quantized_image_np.astype('uint8'))
+
+# # Display or save the quantized image
+# quantized_image.show()  # Opens the image in the default viewer
+
+# Alternatively, to save the image, uncomment the line below
+# quantized_image.save('quantized_mask_preview.png')
+
+
 import os
 import cv2
 import numpy as np
@@ -6,8 +40,7 @@ import torch
 # Preprocessing code regerate annos since there were not always good
 
 # Define paths
-path_of_images = r"C:\Users\kofie\Desktop\real_world_data\Dataset3_NorthFarm_Segmentation\annotations"
-infer_to_path = r"C:\Users\kofie\Desktop\real_world_data\Dataset3_NorthFarm_Segmentation\annotations_remix"
+infer_to_path = 'data/ishere'
 
 # Define target and class colors
 target_colors = {
@@ -17,8 +50,7 @@ target_colors = {
     3: (155, 155, 154),                   # Gray
     4: (138, 87, 42),                     # Brown
     5: (183, 21, 123),                    # Pink
-    6: (73, 143, 225),                   # Blue
-    7: (195, 234, 254)           #water
+    6: (73, 143, 225)                     # Blue
 }
 
 class_colors = {
@@ -28,46 +60,11 @@ class_colors = {
     3: (155, 155, 154), # Gray
     4: (138, 87, 42),   # Brown
     5: (183, 21, 123),  # Pink
-    6: (73, 143, 225),   # Blue 
-    7: (195, 234, 254)    #water
+    6: (73, 143, 225)   # Blue 
 }
 
 import numpy as np
 from collections import deque
-
-def mask_fix(mask):
-    """
-    Replace zeros in the mask with the nearest non-zero value using an efficient multi-source BFS approach.
-    """
-    if mask is None:
-        return None
-    
-    height, width = mask.shape
-    new_mask = mask.copy()
-    queue = deque()
-    
-    # Initialize the queue with all non-zero positions and store their values
-    for y in range(height):
-        for x in range(width):
-            if mask[y, x] != 0:
-                queue.append((y, x))
-    
-    # Define directions for BFS: up, down, left, right
-    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
-    
-    # BFS to propagate nearest non-zero values
-    while queue:
-        y, x = queue.popleft()
-        current_value = new_mask[y, x]
-        
-        for dy, dx in directions:
-            ny, nx = y + dy, x + dx
-            if 0 <= ny < height and 0 <= nx < width and new_mask[ny, nx] == 0:
-                new_mask[ny, nx] = current_value
-                queue.append((ny, nx))
-    
-    return new_mask
-
 
 # Function to load annotation
 def load_annotation(path, target_colors):
@@ -100,7 +97,7 @@ def load_annotation(path, target_colors):
     return mask
 
 # Function to colorize and save images
-def inferring_img(mask, img_name, infer_path):
+def inferring_img(mask, infer_path):
     def colorize_mask(mask):
         if isinstance(mask, torch.Tensor):
             mask = mask.cpu().numpy().astype(np.uint8)
@@ -115,22 +112,19 @@ def inferring_img(mask, img_name, infer_path):
 
     colored_original = colorize_mask(mask)
     the_bgr = cv2.cvtColor(colored_original, cv2.COLOR_RGB2BGR)
-    original_save_path = os.path.join(infer_path, f'{img_name}')
+    original_save_path = os.path.join(infer_path, f'img_okkay.png')
     cv2.imwrite(original_save_path, the_bgr)
 
 # Process each image in the directory
 if not os.path.exists(infer_to_path):
     os.makedirs(infer_to_path)
 
-image_files = [f for f in os.listdir(path_of_images) if f.endswith(('.png', '.jpg', '.jpeg'))]
-for image_file in image_files:
-    image_path = os.path.join(path_of_images, image_file)
-    mask = load_annotation(image_path, target_colors)
+image_path = r"C:\Users\kofie\Desktop\real_world_data\Train\annos\anno_471.png"
+mask = load_annotation(image_path, target_colors)
 
-    mask = mask_fix(mask)
 
-    if mask is not None:
-        inferring_img(mask, image_file, infer_to_path)
-        print(f"Processed and saved: {image_file}")
-    else:
-        print(f"Skipping image due to load failure: {image_file}")
+if mask is not None:
+    inferring_img(mask, infer_to_path)
+    print(f"Processed and saved: ")
+else:
+    print(f"Skipping image due to load failure: ")

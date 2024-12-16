@@ -32,15 +32,15 @@ logging.info("Starting the script.")
 # Configuration for dataset paths
 train_cfg = {
     'type': 'prepSegmentationDataset',
-    'img_dir': 'data/new_TrainM/imgs',
-    'ann_dir': 'data/new_TrainM/annos',
+    'img_dir': 'data/modified/train_img',
+    'ann_dir': 'data/modified/train_anno',
     'is_train': True 
 }
 
 val_cfg = {
     'type': 'prepSegmentationDataset',
-    'img_dir': 'data/new_TestM/mixed/imgs',
-    'ann_dir': 'data/new_TestM/mixed/annos',
+    'img_dir': 'data/modified/test_img',
+    'ann_dir': 'data/modified/test_anno',
     'is_train': False
 }
 
@@ -100,17 +100,16 @@ def deeplab_train(train_loader, val_loader, num_classes, device='cpu'):
         for batch in train_bar:
             images = batch['img'].to(device)
             masks = batch['gt_semantic_seg'].to(device)
-
             optimizer.zero_grad()
             outputs = model(images)
-            
+
             if isinstance(outputs, tuple):
                 aux_loss = ce_criterion(outputs[0], masks)
                 main_loss = ce_criterion(outputs[1], masks)
                 loss = main_loss + 0.4 * aux_loss
             else:
                 loss = ce_criterion(outputs, masks)
-            
+
             loss.backward()
             optimizer.step()
 
@@ -126,24 +125,24 @@ def deeplab_train(train_loader, val_loader, num_classes, device='cpu'):
         val_loss = 0
         correct = total = 0
         ious = []
-        
+
         val_bar = tqdm(val_loader, desc=f'Epoch {epoch+1}/{num_epochs} [Val]')
-        
+
         with torch.no_grad():
             for batch in val_bar:
                 images = batch['img'].to(device)
                 masks = batch['gt_semantic_seg'].to(device)
-                
+
                 outputs = model(images)
-                
+
                 if isinstance(outputs, tuple):
                     _, main_output = outputs
                 else:
                     main_output = outputs
-                
+
                 loss = ce_criterion(main_output, masks)
                 val_loss += loss.item()
-                
+
                 _, predicted = torch.max(main_output.data, 1)
 
                 # Calculate correct predictions and total number of elements
@@ -189,8 +188,6 @@ def deeplab_train(train_loader, val_loader, num_classes, device='cpu'):
 
             print('Saved new best model')
             logging.info(f'Epoch {epoch+1} - Saved new best model.\n')
-
-
 
 if __name__ == "__main__":
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')

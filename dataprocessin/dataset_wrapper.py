@@ -61,21 +61,18 @@ class RepeatDataset(object):
     
 @DATASETS.register_module()
 class prepSegmentationDataset(Dataset):
-    def __init__(self, img_dir, ann_dir, is_train, n_colors=5, transform=None):
+    def __init__(self, img_dir, ann_dir, is_train, transform=None):
         """
         Args:
             img_dir (str): Directory with images.
             ann_dir (str): Directory with annotations.
             transform (callable, optional): Optional transform to be applied on a sample.
-            n_colors (int): Number of colors for segmentation.
         """
         self.img_dir = img_dir
         self.ann_dir = ann_dir
         self.transform = transform
-        self.n_colors = n_colors
         self.is_train = is_train
         self.image_list = self.get_image_list()
-        # self.id_to_trainid = self.get_id_to_trainid_map()
 
         # Define augmentations for training
         if is_train:
@@ -97,21 +94,29 @@ class prepSegmentationDataset(Dataset):
 
         self.target_colors = {
 
-            # what it does is search for the colors below and if a color doesnt match any of these ones below 
-            # it defaults to 0 which is ignored in training
+                # what it does is search for the colors below and if a color doesnt match any of these ones below 
+                # it defaults to 0 which is ignored in training
 
             0: (0, 0, 0),        # ignored: every color without matches below to be pased to this
-            1: [(208, 254, 157), (172, 208, 69)],  # Light green   # light greenish  # the use of two colors is because the images in some folders have different colors for say grass 
-            2: [(59, 93, 4), (3, 48, 0)],  # Dark green   # deep green
+            1: (208, 254, 157),  # Light green   # light greenish  # the use of two colors is because the images in some folders have different colors for say grass 
+            2: (59, 93, 4),  # Dark green   # deep green
             3: (155, 155, 154),  # Gray
             4: (138, 87, 42),    # Brown
             5: (183, 21, 123),   # Pink
             6: (73, 143, 225)    # Blue
-        }
-    
+
+                # adjustments for MAVS sim
+                # 0: (0, 0, 0),
+                # 1: (235, 124, 47), # deep brown veg ground 
+                # 2: (144, 208, 79), # light green tree
+                # 3: (55, 86, 34), # deep green grass
+                # 4: (134, 206, 234), # blue sky
+                # 5: (254, 191, 0) # ligh brown tranversible ground
+            }
+
     def get_image_list(self):
-        img_files = sorted([f for f in os.listdir(self.img_dir) if f.lower().endswith(('.jpg', '.png'))])
-        ann_files = sorted([f for f in os.listdir(self.ann_dir) if f.lower().endswith(('.jpg', '.png'))])
+        img_files = sorted([f for f in os.listdir(self.img_dir) if f.lower().endswith(('.bmp', '.png', '.jpeg'))])
+        ann_files = sorted([f for f in os.listdir(self.ann_dir) if f.lower().endswith(('.bmp', '.png', '.jpeg'))])
         assert len(img_files) == len(ann_files), "Number of raw images and annotations do not match"
         return list(zip(img_files, ann_files))
     
@@ -127,9 +132,13 @@ class prepSegmentationDataset(Dataset):
         image = self.load_image(img_path)
         annotation = self.load_annotation(ann_path)
 
+
         if image is None or annotation is None:
             raise ValueError(f"Failed to load image or annotation at index {idx}")
-        
+
+        image = cv2.resize(image, (512, 512), interpolation=cv2.INTER_LINEAR)
+        annotation = cv2.resize(annotation, (512, 512), interpolation=cv2.INTER_NEAREST)
+
 
         # Apply augmentations
         transformed = self.aug_transform(image=image, mask=annotation)
@@ -139,7 +148,7 @@ class prepSegmentationDataset(Dataset):
             'img': torch.from_numpy(image).permute(2, 0, 1).float() / 255.0,  # Normalize to [0,1]
             'gt_semantic_seg': torch.from_numpy(annotation).long()
         }
-    
+
 
     def load_image(self, path):
         """Load and validate image"""
